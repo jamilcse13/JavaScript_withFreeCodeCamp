@@ -1,0 +1,46 @@
+<script>
+    var voxel = {x: 1, y: 1.5, z: 3}
+
+    var x = voxel.x;
+    var y = voxel.y;
+    var z = voxel.z;
+
+    const {x:a, y:b, z:c} = voxel;   // a=1, b=1.5, c=3
+
+    const AVG_TEMPERATURES = {
+        today: 77.5,
+        tomorrow: 79
+    };
+
+    function getTempOfTmrw(avgTemperatures) {
+        "use strict";
+
+        const { tomorrow : tempOfTomorrow } = avgTemperatures;
+        return tempOfTomorrow;
+    }
+    console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+
+    const LOCAL_FORECAST = {
+        today: { max: 50, min: 45 },
+        tomorrow: { max: 70, min: 60 }
+    };
+
+    function getMaxOfTmrw(forecast) {
+        "use strict";
+
+        const { tomorrow : { max: maxOfTomorrow } } = forecast;
+        return maxOfTomorrow;
+    }
+    console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+
+    let q = 8, w = 9;
+    (() => {
+        "use strict";
+        [q,w] = [w,q];
+    })();
+    console.log(q);
+    console.log(w);
+
+</script>

@@ -1,0 +1,50 @@
+<script>
+    function casseInSwitch(val) {
+        var answer = "";
+        switch(val) {
+            case 1:
+                answer = "alpha";
+                break;
+            case 2:
+                answer = "beta";
+                break;
+            case 3:
+                answer = "gamma";
+                break;
+            case 4:
+                answer = "delta";
+                break;
+            default:
+                answer = "none of these";
+                break;
+        }
+        return answer;
+    }
+
+    console.log(casseInSwitch(5))
+
+
+    // same output for multiple value
+    function sequentialSizes(val) {
+        var answer = "";
+        switch (val) {
+            case 1:
+            case 2:
+            case 3:
+                return answer = "Low";
+                break;
+            case 4:
+            case 5:
+            case 6:
+                return answer = "Mid";
+                break;
+            case 7:
+            case 8:
+            case 9:
+                return answer = "High";
+                break;
+        }
+        return answer;
+    }
+    console.log(sequentialSizes(1))
+</script>

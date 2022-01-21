@@ -1,0 +1,22 @@
+<script>
+  console.log("Hello World");
+
+  var number = 5; // inline-comment
+  /*multi
+    line
+    comment*/
+  var myStr = "First Line\n\t\\Second Line\n\tThird Line";
+  console.log(myStr);
+
+  var mySubStr = "Javascript is awesome!";
+  console.log(mySubStr.length)
+
+
+function wordBlank(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+}
+
+console.log(wordBlank("dog", "big", "ran", "slowly"));
+</script>

@@ -1,0 +1,40 @@
+<script>
+    var catName = "Quincy";
+    var quote;
+    var catName = "Beau";
+
+    // let catName = "Beau";  //:4 Uncaught SyntaxError: Identifier 'catName' has already been declared
+
+    function catTalk() {
+        catName = "Oliver";
+        quote = catName + " says Meow!";
+        return quote;
+    }
+    console.log(catTalk());
+
+    var magicFun = function() {
+        return 5;
+    }
+    console.log(magicFun());
+
+    var magicFun2 = () => {
+        return 4;
+    }
+    console.log(magicFun2());
+
+    var magicFun3 = () => 6;
+    console.log(magicFun3());
+
+    var myConcat = function(arr1, arr2) {
+        return arr1.concat(arr2);
+    }
+    console.log(myConcat([1,2], [3,4,5]));
+
+    var myConcat2 = (arr1, arr2) => {
+        return arr1.concat(arr2);
+    }
+    console.log(myConcat2([1,2], [3,4,5]));
+
+    var myConcat3 = (arr1, arr2) => arr1.concat(arr2);
+    console.log(myConcat3([1,2], [3,4,5]));
+</script>
